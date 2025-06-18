@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Привет!</h1>
+        <!-- Добавление изображения -->
+        <img src="https://i.ibb.co/dSqjXxh/file.jpg" alt="Фото Гриши" class="profile-image" />
+        
+        <p>Меня зовут Гриша и мне 9 лет.</p>
+        <p>Я из Москвы.</p>
+        <p>Напишите мне: <a href="mailto:grishaserikov@gmail.com">grishaserikov@gmail.com</a></p>
+        <p>Мой профиль Steam <a href="https://steamcommunity.com/profiles/76561197989472804/">тут</a>.</p>
+
+        <!-- Кнопка для перехода на другую страницу -->
+        <a href="game.html" class="play-button">Играть</a>
+
+        <!-- Кнопка для управления музыкой -->
+        <button id="playPauseButton" class="music-button">Играть музыку</button>
+
+        <!-- Аудио элемент -->
+        <audio id="backgroundMusic" src="<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Привет!</h1>
+        <!-- Добавление изображения -->
+        <img src="https://i.ibb.co/dSqjXxh/file.jpg" alt="Фото Гриши" class="profile-image" />
+        
+        <p>Меня зовут Гриша и мне 9 лет.</p>
+        <p>Я из Москвы.</p>
+        <p>Напишите мне: <a href="mailto:grishaserikov@gmail.com">grishaserikov@gmail.com</a></p>
+        <p>Мой профиль Steam <a href="https://steamcommunity.com/profiles/76561197989472804/">тут</a>.</p>
+
+        <!-- Кнопка для перехода на другую страницу -->
+        <a href="game.html" class="play-button">Играть</a>
+
+        <!-- Кнопка для управления музыкой -->
+        <button id="playPauseButton" class="music-button">Играть музыку</button>
+
+        <!-- Аудио элемент -->
+        <audio id="backgroundMusic" src="https://screenapp.io/app/#/shared/T8GIV9QNyI"></audio>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const playPauseButton = document.getElementById('playPauseButton');
+            const audio = document.getElementById('backgroundMusic');
+
+            // Обновление текста кнопки при воспроизведении/паузе
+            audio.addEventListener('play', () => {
+                playPauseButton.textContent = 'Пауза';
+            });
+            audio.addEventListener('pause', () => {
+                playPauseButton.textContent = 'Играть музыку';
+            });
+
+            // Обработка клика по кнопке
+            playPauseButton.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play().catch(error => {
+                        console.log('Ошибка воспроизведения:', error);
+                        alert('Не удалось запустить музыку. В браузере может быть блокировка автоматического воспроизведения.');
+                    });
+                } else {
+                    audio.pause();
+                }
+            });
+        });
+    </script>
+</body>
+</html>"></audio>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const playPauseButton = document.getElementById('playPauseButton');
+            const audio = document.getElementById('backgroundMusic');
+
+            // Обновление текста кнопки при воспроизведении/паузе
+            audio.addEventListener('play', () => {
+                playPauseButton.textContent = 'Пауза';
+            });
+            audio.addEventListener('pause', () => {
+                playPauseButton.textContent = 'Играть музыку';
+            });
+
+            // Обработка клика по кнопке
+            playPauseButton.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play().catch(error => {
+                        console.log('Ошибка воспроизведения:', error);
+                        alert('Не удалось запустить музыку. В браузере может быть блокировка автоматического воспроизведения.');
+                    });
+                } else {
+                    audio.pause();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9; /* Светло-серый фон */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333; /* Темный цвет для заголовка */
+}
+
+.profile-image {
+    width: 150px; /* Уменьшенная ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+p {
+    font-size: 20px;
+}
+
+a, .music-button {
+    color: #FFD700; /* Золотистый цвет ссылок и кнопки */
+}
+
+.play-button, .music-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.play-button:hover, .music-button:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+}
